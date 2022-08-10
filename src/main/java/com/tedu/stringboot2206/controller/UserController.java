@@ -8,11 +8,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-
 @Controller
 public class UserController {
     //表示保存所有用户信息的目录users
-    private static File userDir;
+    public static File userDir;
     static{
         userDir = new File("./users");
         if (!userDir.exists()){
